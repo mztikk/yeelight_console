@@ -1,0 +1,18 @@
+[package]
+name = "yeelight_console"
+version = "0.1.0"
+edition = "2021"
+description = "CLI for yeelights"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
+[dependencies]
+anyhow = "1.0.57"
+apyee = { path = "../apyee" }
+clap = { version = "3.2.5", features = ["derive", "unicode"] }
+csscolorparser = "0.6.0"
+tokio = { version = "1.19.2", features = ["full"] }
