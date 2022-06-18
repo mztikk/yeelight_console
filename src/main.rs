@@ -1,12 +1,11 @@
 use apyee::{device::Device, method::Method};
 use clap::{Parser, Subcommand};
-use std::net::IpAddr;
 
 #[derive(Parser)]
 #[clap(author, version, about, long_about = None)]
 #[clap(propagate_version = true)]
 struct Cli {
-    device_ip: IpAddr,
+    device_ip: String,
     #[clap(short, long)]
     device_port: Option<u16>,
     #[clap(subcommand)]
@@ -45,7 +44,7 @@ async fn main() -> anyhow::Result<()> {
         }
     };
 
-    println!("Connected to device on {}:{}", device.ip, device.port);
+    println!("Connected to device on {}", device.address);
 
     // output commands
     match cli.command {
