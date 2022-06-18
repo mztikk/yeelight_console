@@ -10,9 +10,9 @@ checksum = "08f9b8508dccb7687a1d6c4ce66b2b0ecef467c94667de27d8d7fe1f8d2a9cdc"
 
 [[package]]
 name = "apyee"
-version = "0.2.2"
+version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf9093a4bc0fe1755f7058c068fd81997d7fbc26b50d9a4d06d77d596ac3abee"
+checksum = "e6c8dbd03ae2fe6df468c0631aa294190d9de2905b30d7f1ed807e3ff692745a"
 dependencies = [
  "get_params_derive",
  "quote",
