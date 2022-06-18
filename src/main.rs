@@ -55,7 +55,9 @@ async fn main() -> anyhow::Result<()> {
         }
         Commands::SetPower { power } => {
             println!("Set power to {}", power);
-            device.execute_method(Method::SetPower(power)).await?;
+            device
+                .execute_method(Method::SetPower(power, None, None))
+                .await?;
         }
         Commands::SetRgb { red, green, blue } => {
             println!("Set RGB to {} {} {}", red, green, blue);

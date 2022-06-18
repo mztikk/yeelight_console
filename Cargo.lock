@@ -10,12 +10,13 @@ checksum = "08f9b8508dccb7687a1d6c4ce66b2b0ecef467c94667de27d8d7fe1f8d2a9cdc"
 
 [[package]]
 name = "apyee"
-version = "0.2.3"
+version = "0.3.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e6c8dbd03ae2fe6df468c0631aa294190d9de2905b30d7f1ed807e3ff692745a"
+checksum = "71dcccc8c48cd419f26c64d67bd1c36adc10ebee43e8e08c11e482be6d3eb1f3"
 dependencies = [
  "get_params_derive",
  "quote",
+ "rand",
  "serde",
  "serde_json",
  "serde_variant",
@@ -116,9 +117,9 @@ dependencies = [
 
 [[package]]
 name = "get_params_derive"
-version = "0.4.0"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c6cd0cdd270955ddaaaf8dba31b868df1b1a44d7e5070c9cf450cd9adaeb055"
+checksum = "bf8b991adcf820c34842dbc1b44c4b8c92b787b56db8b44b292b74ae926be561"
 dependencies = [
  "convert_case",
  "proc-macro2",
