@@ -10,7 +10,9 @@ checksum = "216261ddc8289130e551ddcd5ce8a064710c0d064a4d2895c67151c92b5443f6"
 
 [[package]]
 name = "apyee"
-version = "0.5.1"
+version = "0.5.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "89d894697352a37f466f776b2da2d7deb35fb3aef01362a87ca79b2b5c266b3b"
 dependencies = [
  "get_params_derive",
  "quote",
@@ -708,7 +710,7 @@ checksum = "f40009d85759725a34da6d89a94e63d7bdc50a862acf0dbc7c8e488f1edcb6f5"
 
 [[package]]
 name = "yeelight_console"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "anyhow",
  "apyee",
