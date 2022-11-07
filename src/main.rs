@@ -36,11 +36,11 @@ async fn main() -> anyhow::Result<()> {
     let mut device = match cli.device_port {
         Some(port) => {
             println!("Connecting to device at {}:{}", cli.device_ip, port);
-            Device::new_with_port(cli.device_ip, port).await?
+            Device::new_with_port(&cli.device_ip, port).await?
         }
         None => {
             println!("Connecting to device at {}", cli.device_ip);
-            Device::new(cli.device_ip).await?
+            Device::new(&cli.device_ip).await?
         }
     };
 
@@ -69,8 +69,8 @@ async fn main() -> anyhow::Result<()> {
                 color,
                 &parsed_color.to_rgb_string()
             );
-            let rgba = parsed_color.rgba_u8();
-            device.set_rgb(rgba.0, rgba.1, rgba.2).await?;
+            let rgba = parsed_color.to_rgba8();
+            device.set_rgb(rgba[0], rgba[1], rgba[2]).await?;
         }
     }
 
