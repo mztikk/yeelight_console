@@ -1,6 +1,6 @@
 [package]
 name = "yeelight_console"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "CLI for yeelights"
 
@@ -12,7 +12,7 @@ strip = true
 
 [dependencies]
 anyhow = "1.0.66"
-apyee = { version = "0.5.1" }
+apyee = { version = "0.5.2" }
 clap = { version = "4.0.22", features = ["derive", "unicode"] }
 csscolorparser = "0.6.2"
 tokio = { version = "1.21.2", features = ["full"] }

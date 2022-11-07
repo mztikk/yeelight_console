@@ -11,8 +11,6 @@ checksum = "216261ddc8289130e551ddcd5ce8a064710c0d064a4d2895c67151c92b5443f6"
 [[package]]
 name = "apyee"
 version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae9b282c116441e653bd42c40946abacfcd2dc6c54c6b2318ab6ea077a25e009"
 dependencies = [
  "get_params_derive",
  "quote",
